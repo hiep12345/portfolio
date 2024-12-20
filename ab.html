@@ -6,236 +6,227 @@
     <title>Portfolio - Performance Ads Specialist</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #212529;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        .header {
+        header {
             text-align: center;
             padding: 20px 0;
             border-bottom: 2px solid #007bff;
         }
-        .header img {
-            width: 100px;
-            height: 100px;
+        header img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
         }
-        .header h1 {
-            font-size: 28px;
+        header h1 {
+            font-size: 36px;
             color: #007bff;
             margin: 0;
         }
-        .header h2 {
-            font-size: 16px;
-            color: #555;
-            margin: 5px 0 0;
+        header h2 {
+            font-size: 18px;
+            color: #666;
+            margin: 5px 0;
         }
         .section {
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .section h2 {
-            font-size: 20px;
+            font-size: 28px;
             color: #007bff;
-            border-bottom: 1px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .section ul {
-            list-style: none;
-            padding: 0;
+        .experience {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        .section ul li {
-            margin-bottom: 10px;
-            line-height: 1.6;
+        .experience-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience-item .left {
+            width: 30%;
+            font-weight: bold;
+        }
+        .experience-item .right {
+            width: 65%;
+        }
+        .experience-item .right ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .projects, .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .project, .certification-card {
+            flex: 1 1 calc(33.333% - 10px);
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project img, .certification-card img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .project h3, .certification-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #007bff;
         }
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
+            justify-content: space-around;
         }
         .skill {
-            flex: 1 1 calc(33.333% - 10px);
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #dee2e6;
+            background: #e9f7ff;
+            border: 1px solid #007bff;
             border-radius: 5px;
-            background-color: #f8f9fa;
-        }
-        .skill p {
-            margin: 5px 0 0;
+            padding: 15px;
+            text-align: center;
             font-weight: bold;
+            flex: 1 1 calc(25% - 10px);
             color: #007bff;
+        }
+        .contact {
+            text-align: center;
         }
         .contact p {
             margin: 5px 0;
-        }
-        .projects img {
-            width: 100%;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-        .certifications {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-        .certification-card {
-            flex: 1 1 calc(30% - 20px);
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .certification-card img {
-            width: 100%;
-            height: auto;
-        }
-        .certification-card .details {
-            padding: 10px;
-            text-align: center;
-        }
-        .certification-card .details h3 {
             font-size: 16px;
-            color: #007bff;
-            margin: 5px 0;
-        }
-        .certification-card .details p {
-            font-size: 14px;
-            color: #555;
-            margin: 0;
         }
         footer {
+            margin-top: 40px;
+            padding: 20px;
             text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
+            background: #007bff;
+            color: #fff;
             border-radius: 0 0 10px 10px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="header">
+    <header>
         <img src="https://cdn.pixabay.com/photo/2022/09/30/13/23/woman-9264738_960_720.jpg" alt="Profile Picture">
         <h1>Nguyễn Văn A</h1>
         <h2>Performance Ads Specialist</h2>
-    </div>
+    </header>
 
-    <div class="section">
+    <section class="about section">
         <h2>About Me</h2>
-        <p>Results-driven Facebook Ads Specialist with over 3 years of experience in creating and optimizing performance marketing campaigns. Proven track record in exceeding ROI and achieving outstanding KPIs in competitive markets.</p>
-    </div>
+        <p>A result-driven Performance Ads Specialist with a proven track record of delivering exceptional results. Skilled in optimizing ad performance and crafting data-driven strategies that ensure ROI growth. Passionate about utilizing creative and analytical skills to achieve marketing objectives.</p>
+    </section>
 
-    <div class="section">
+    <section class="experience section">
         <h2>Experience</h2>
-        <ul>
-            <li><strong>Facebook Ads Specialist - ABC Corp (2021-2023)</strong>
-                <ul>
-                    <li>Increased campaign ROI by 40% through strategic audience segmentation and A/B testing.</li>
-                    <li>Reduced CPA by 25% by implementing advanced bidding strategies.</li>
-                    <li>Collaborated with creative teams to produce high-converting ad creatives.</li>
-                </ul>
-            </li>
-            <li><strong>Digital Marketing Executive - XYZ Agency (2019-2021)</strong>
-                <ul>
-                    <li>Optimized ad spend efficiency, delivering 30% revenue growth within 6 months.</li>
-                    <li>Analyzed campaign performance to refine targeting and boost engagement rates by 20%.</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="experience">
+            <div class="experience-item">
+                <div class="left">Facebook Ads Specialist<br><em>ABC Corp (2021-2023)</em></div>
+                <div class="right">
+                    <ul>
+                        <li>Boosted ROI by 40% using audience segmentation and advanced A/B testing.</li>
+                        <li>Reduced CPA by 25% through predictive bidding strategies.</li>
+                        <li>Collaborated on high-impact ad creatives, increasing engagement by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="left">Digital Marketing Executive<br><em>XYZ Agency (2019-2021)</em></div>
+                <div class="right">
+                    <ul>
+                        <li>Optimized campaigns to achieve 30% revenue growth in six months.</li>
+                        <li>Developed analytics-driven strategies improving CTR by 15%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
+    <section class="projects section">
         <h2>Projects</h2>
         <div class="projects">
-            <img src="https://cdn.pixabay.com/photo/2022/09/30/13/23/woman-9264738_960_720.jpg" alt="Project 1">
-            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <div class="project">
+                <img src="https://cdn.pixabay.com/photo/2022/09/30/13/23/woman-9264738_960_720.jpg" alt="Project 1">
+                <h3>Ad Campaign Optimization</h3>
+            </div>
+            <div class="project">
+                <img src="https://cubanvr.com/wp-content/uploads/2023/07/ai-image-generators.webp" alt="Project 2">
+                <h3>Creative Ad Design</h3>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="certifications section">
         <h2>Certifications</h2>
         <div class="certifications">
             <div class="certification-card">
-                <img src="https://via.placeholder.com/300x200" alt="Certification 1">
-                <div class="details">
-                    <h3>Google UX Design Certificate</h3>
-                    <p>Google</p>
-                    <p>UX Fundamentals</p>
-                </div>
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/00/12/people-2581913_960_720.jpg" alt="Certification 1">
+                <h3>Google UX Design Certificate</h3>
+                <p>Google | UX Fundamentals</p>
             </div>
             <div class="certification-card">
-                <img src="https://via.placeholder.com/300x200" alt="Certification 2">
-                <div class="details">
-                    <h3>Facebook Ads Expert Certificate</h3>
-                    <p>Facebook</p>
-                    <p>Performance Ads</p>
-                </div>
+                <img src="https://cdn.pixabay.com/photo/2020/02/23/20/40/analytics-4870342_960_720.jpg" alt="Certification 2">
+                <h3>Facebook Ads Expert</h3>
+                <p>Facebook | Performance Ads</p>
             </div>
             <div class="certification-card">
-                <img src="https://via.placeholder.com/300x200" alt="Certification 3">
-                <div class="details">
-                    <h3>Advanced Analytics Certification</h3>
-                    <p>Google Analytics</p>
-                    <p>Data Analysis</p>
-                </div>
+                <img src="https://cdn.pixabay.com/photo/2017/11/10/05/00/analytics-2938704_960_720.jpg" alt="Certification 3">
+                <h3>Advanced Analytics Certification</h3>
+                <p>Google Analytics | Data Analysis</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="skills section">
         <h2>Skills</h2>
         <div class="skills">
-            <div class="skill">
-                <p>Facebook Ads</p>
-            </div>
-            <div class="skill">
-                <p>Performance Analytics</p>
-            </div>
-            <div class="skill">
-                <p>Copywriting</p>
-            </div>
-            <div class="skill">
-                <p>A/B Testing</p>
-            </div>
-            <div class="skill">
-                <p>Data-Driven Decisions</p>
-            </div>
+            <div class="skill">Facebook Ads</div>
+            <div class="skill">Data Analytics</div>
+            <div class="skill">Creative Copywriting</div>
+            <div class="skill">A/B Testing</div>
+            <div class="skill">ROI Optimization</div>
         </div>
-    </div>
+    </section>
 
-    <div class="section contact">
+    <section class="contact section">
         <h2>Contact</h2>
-        <p><strong>Email:</strong> nguyenvana@gmail.com</p>
-        <p><strong>Phone:</strong> 0909123456</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nguyenvana" target="_blank">linkedin.com/in/nguyenvana</a></p>
-    </div>
+        <div class="contact">
+            <p><strong>Email:</strong> nguyenvana@gmail.com</p>
+            <p><strong>Phone:</strong> 0909123456</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nguyenvana" target="_blank">linkedin.com/in/nguyenvana</a></p>
+        </div>
+    </section>
 </div>
 
 <footer>
