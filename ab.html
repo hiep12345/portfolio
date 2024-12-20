@@ -85,6 +85,38 @@
             margin-bottom: 15px;
             border-radius: 5px;
         }
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .certification-card {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .certification-card img {
+            width: 100%;
+            height: auto;
+        }
+        .certification-card .details {
+            padding: 10px;
+            text-align: center;
+        }
+        .certification-card .details h3 {
+            font-size: 16px;
+            color: #007bff;
+            margin: 5px 0;
+        }
+        .certification-card .details p {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+        }
         footer {
             text-align: center;
             margin-top: 20px;
@@ -110,7 +142,7 @@
 
 <div class="container">
     <div class="header">
-        <img src="profile-placeholder.jpg" alt="Profile Picture">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
         <h1>Nguyễn Văn A</h1>
         <h2>Performance Ads Specialist</h2>
     </div>
@@ -142,8 +174,38 @@
     <div class="section">
         <h2>Projects</h2>
         <div class="projects">
-            <img src="project-1-placeholder.jpg" alt="Project 1">
-            <img src="project-2-placeholder.jpg" alt="Project 2">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="certifications">
+            <div class="certification-card">
+                <img src="https://via.placeholder.com/300x200" alt="Certification 1">
+                <div class="details">
+                    <h3>Google UX Design Certificate</h3>
+                    <p>Google</p>
+                    <p>UX Fundamentals</p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <img src="https://via.placeholder.com/300x200" alt="Certification 2">
+                <div class="details">
+                    <h3>Facebook Ads Expert Certificate</h3>
+                    <p>Facebook</p>
+                    <p>Performance Ads</p>
+                </div>
+            </div>
+            <div class="certification-card">
+                <img src="https://via.placeholder.com/300x200" alt="Certification 3">
+                <div class="details">
+                    <h3>Advanced Analytics Certification</h3>
+                    <p>Google Analytics</p>
+                    <p>Data Analysis</p>
+                </div>
+            </div>
         </div>
     </div>
 
